@@ -1,7 +1,7 @@
 public class Magic {
 	public static void main(String[] args) {
     // myNumber is the original number
-    int myNumber = 5;
+    int myNumber = 20;
     // set equal to the original number multiplied by itself
 	int stepOne = myNumber * myNumber;
     // Set it equal to the previous result (stepOne) plus the original number
