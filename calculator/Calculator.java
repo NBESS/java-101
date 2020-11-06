@@ -7,7 +7,7 @@ public class Calculator {
 
     // toString method
     public String toString() {
-        return "The calculator has various methods that can be used to perform mathematical operations"
+        return "The calculator has various methods that can be used to perform mathematical operations";
     }
 
     // Add method
@@ -53,6 +53,7 @@ public class Calculator {
     public static void main(String[] args) {
         Calculator myCalculator = new Calculator();
 
+        System.out.println(myCalculator);
         myCalculator.add(5, 7);
         myCalculator.subtract(12, 7);
         myCalculator.multiply(100, 4);
