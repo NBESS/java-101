@@ -9,11 +9,15 @@ public class Droid {
         batteryLevel = 100;
     }
 
+    public String toString() {
+        return "Hello, I'm the droid: " + name;
+    }
+
     // Main method
     public static void main(String[] args) {
         Droid codey = new Droid("Codey");
 
-        System.out.println(codey.name);
+        System.out.println(codey);
     }
 
 }
