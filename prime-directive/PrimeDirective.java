@@ -18,8 +18,17 @@ class PrimeDirective {
       } 
     }
     return true;
-
     }
+
+    public ArrayList<Integer> onlyPrimes(int[] numbers) {
+    ArrayList<Integer> primes = new ArrayList<Integer>();
+    for (int number : numbers) {
+      if (isPrime(number)) {
+        primes.add(number);
+      }
+    }
+    return primes;
+  }
 
     public static void main(String[] args) {
 
