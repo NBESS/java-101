@@ -30,14 +30,20 @@ class PrimeDirective {
         return primes;
     }
 
-    public ArrayList<Integer> filterByType(int[] number, String type){
+    public ArrayList<Integer> filterByType(int[] numbers, String type){
+       
+        ArrayList<Integer> filteredList = new ArrayList<Integer>();
+
         if (type == "even") {
-            System.out.println("Will return even numbers");
+            for (int number : numbers) {
+                if (number % 2 == 0) {
+                    System.out.println(number + " -- has been added to (even) filtered list");
+                    filteredList.add(number);
+                }
+            }
         } else if (type == "odd") {
             System.out.println("Will return odd numbers");
         }
-
-        ArrayList<Integer> filteredList = new ArrayList<Integer>();
 
         return filteredList;
     }
@@ -48,7 +54,7 @@ class PrimeDirective {
         int[] numbers = {6, 29, 28, 33, 11, 100, 101, 43, 89};
 
         System.out.println(pd.onlyPrimes(numbers));
-        pd.filterByType(numbers, "even");
+        System.out.println(pd.filterByType(numbers, "even"));
         pd.filterByType(numbers, "odd");
 
     }
