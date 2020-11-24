@@ -42,7 +42,12 @@ class PrimeDirective {
                 }
             }
         } else if (type == "odd") {
-            System.out.println("Will return odd numbers");
+            for (int number : numbers) {
+                if (number % 2 != 0) {
+                    System.out.println(number + " -- has been added to (odd) filtered list");
+                    filteredList.add(number);
+                }
+            }
         }
 
         return filteredList;
@@ -55,7 +60,7 @@ class PrimeDirective {
 
         System.out.println(pd.onlyPrimes(numbers));
         System.out.println(pd.filterByType(numbers, "even"));
-        pd.filterByType(numbers, "odd");
+        System.out.println(pd.filterByType(numbers, "odd"));
 
     }
 }
